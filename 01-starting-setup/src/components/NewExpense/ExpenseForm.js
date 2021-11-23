@@ -6,6 +6,7 @@ const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredDate, setEnteredDate] = useState('')
+
     // [2] state를 하나로 관리하기.
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
@@ -30,12 +31,14 @@ const ExpenseForm = (props) => {
         // [1] state를 개별로 관리하기.
         setEnteredTitle(event.target.value)
         console.log(enteredTitle)
+
         // [2] state를 하나로 관리하기.
         // setUserInput({
         //     ...userInput,
         //     enteredTitle: event.target.value
         // })
         // console.log(userInput)
+
         // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
         // setUserInput((prevState) => {
         //     return {
@@ -49,12 +52,14 @@ const ExpenseForm = (props) => {
         // [1] state를 개별로 관리하기.
         setEnteredAmount(event.target.value)
         console.log(enteredAmount)
+
         // [2] state를 하나로 관리하기.
         // setUserInput({
         //     ...userInput,
         //     enteredAmount: event.target.value
         // })
         // console.log(userInput)
+
         // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
         // setUserInput((prevState) => {
         //     return {
@@ -75,6 +80,7 @@ const ExpenseForm = (props) => {
         //     enteredDate: event.target.value
         // })
         // console.log(userInput)
+        
         // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
         // setUserInput((prevState) => {
         //     return {
