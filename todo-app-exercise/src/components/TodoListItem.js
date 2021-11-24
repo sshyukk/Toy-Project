@@ -8,12 +8,11 @@ import classnames from 'classnames';
 import './TodoListItem.scss';
 
 const TodoListItem = (props) => {
-  const { text, checked } = props.todo;
   return (
     <div className="TodoListItem">
-      <div className={classnames('checkbox', { checked })}>
+      <div className={classnames('checkbox', { checked: props.todo.checked })}>
         {props.todo.checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
-        <div className="text">{text}</div>
+        <div className="text">{props.todo.text}</div>
       </div>
       <div className="remove">
         <MdRemoveCircleOutline />
