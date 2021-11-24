@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  MdCheckBoxOutLineBlank,
+  MdCheckBoxOutlineBlank,
   MdCheckBox,
   MdRemoveCircleOutline,
 } from 'react-icons/md';
@@ -10,7 +10,7 @@ const TodoListItem = () => {
   return (
     <div className="TodoListItem">
       <div className="checkbox">
-        <MdCheckBoxOutLineBlank />
+        <MdCheckBoxOutlineBlank />
         <div className="text">할 일</div>
       </div>
       <div className="remove">

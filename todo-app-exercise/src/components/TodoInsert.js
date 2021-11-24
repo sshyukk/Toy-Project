@@ -14,3 +14,6 @@ const TodoInsert = () => {
 };
 
 export default TodoInsert;
+
+// 할 일을 입력할 수 있는 컴포넌트.
+// 인풋을 사용하려면 무조건 form 태그와 같이 사용해야하는가.
