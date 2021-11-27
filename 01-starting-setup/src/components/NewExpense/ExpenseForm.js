@@ -2,16 +2,10 @@ import React, { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
-  // [1] state를 개별로 관리하기.
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  // [2] state를 하나로 관리하기.
-  // const [userInput, setUserInput] = useState({
-  //     enteredTitle: '',
-  //     enteredAmount: '',
-  //     enteredDate: ''
-  // })
+
   const submitHandler = (event) => {
     event.preventDefault();
     const expenseData = {
@@ -25,61 +19,16 @@ const ExpenseForm = (props) => {
     setEnteredDate("");
   };
   const titleChangeHandler = (event) => {
-    // [1] state를 개별로 관리하기.
     setEnteredTitle(event.target.value);
     console.log(enteredTitle);
-    // [2] state를 하나로 관리하기.
-    // setUserInput({
-    //     ...userInput,
-    //     enteredTitle: event.target.value
-    // })
-    // console.log(userInput)
-    // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
-    // setUserInput((prevState) => {
-    //     return {
-    //         ...prevState,
-    //         enteredTitle: event.target.value
-    //     }
-    // })
-    // console.log(userInput)
   };
   const amountChangeHandler = (event) => {
-    // [1] state를 개별로 관리하기.
     setEnteredAmount(event.target.value);
     console.log(enteredAmount);
-    // [2] state를 하나로 관리하기.
-    // setUserInput({
-    //     ...userInput,
-    //     enteredAmount: event.target.value
-    // })
-    // console.log(userInput)
-    // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
-    // setUserInput((prevState) => {
-    //     return {
-    //         ...prevState,
-    //         enteredAmount: event.target.value
-    //     }
-    // })
-    // console.log(userInput)
   };
   const dateChangeHandler = (event) => {
-    // [1] state를 개별로 관리하기.
     setEnteredDate(event.target.value);
     console.log(enteredDate);
-    // [2] state를 하나로 관리하기.
-    // setUserInput({
-    //     ...userInput,
-    //     enteredDate: event.target.value
-    // })
-    // console.log(userInput)
-    // [3] state를 하나로 관리하기. 함수를 매개변수로 사용.
-    // setUserInput((prevState) => {
-    //     return {
-    //         ...prevState,
-    //         enteredDate: event.target.value
-    //     }
-    // })
-    // console.log(userInput)
   };
   return (
     <form onSubmit={submitHandler}>
