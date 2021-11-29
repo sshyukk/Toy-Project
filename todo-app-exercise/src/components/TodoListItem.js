@@ -10,7 +10,7 @@ import './TodoListItem.scss';
 const TodoListItem = (props) => {
   return (
     <div className="TodoListItem">
-      <div className={classnames('checkbox', { checked: props.todo.checked })}>
+      <div className={('checkbox', { checked: props.todo.checked })}>
         {props.todo.checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
         <div className="text">{props.todo.text}</div>
       </div>
